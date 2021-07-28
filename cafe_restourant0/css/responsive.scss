@@ -1,0 +1,963 @@
+@import "mixin";
+// @import "style";
+
+@media  (max-width: 850px) {
+
+  .form-container {
+    width: 100%;
+    padding: 20px 0 10px 0;
+
+    &-title {
+      text-align: unset;
+      padding-left: 275px;
+    }
+
+    &-sub { 
+      .form-tel {
+        padding-top: 10px;
+        display: block;
+        margin: 0 auto ;
+      }
+
+    }
+
+
+    &-inner {
+      .img-flex-item {
+        width: 300px;
+        .img-box {
+          width: 100%;
+          margin: 0 20px 0 0; 
+          
+          & img {
+            width: 250px;
+          }
+          .img-title {
+            transform: translateY(-20px);
+              font-size: 11px;
+
+          }
+        }
+      }
+
+      
+      .form-flex-item {
+        margin: none;
+        box-sizing: border-box;
+        .form-box {
+          width: auto;
+          margin: 0 20px 0 32px;
+          
+        }
+      }
+    }
+
+
+  }
+
+    header {
+      // display: none;
+  
+      & img {
+        width: 170px;
+      }
+  
+      .a-content {
+        justify-content: none;
+  
+        .header-move {
+          flex: 2;
+          
+        }
+        .head-right {
+          
+          flex: 1;
+    
+          .reserve-btn {
+            margin-left: 40%  ;
+          }
+        }
+      }
+    }
+
+    .menu-wrapper {
+      // padding-bottom: 0px;
+      .menu-content {
+        width: 80% !important;
+        
+      }
+
+    }
+  
+  
+  
+  
+    .welcome-wrapper {
+      .welcome-content {
+        margin: 0px;
+        padding: 100px 50px;
+      }
+      
+      .welcome-text h1,.welcome-text p {
+        width: 300px ; 
+         
+      }
+    }
+  
+  
+    
+    .chef-main-wrap {
+      
+      .chefs {
+        & img {
+          width: 450px;
+        }
+      }
+      .chef-text {
+        top: 30% ;
+        min-width: 300px;
+        
+        
+  
+  
+        .chef-text-sub {
+          
+          & h3 {
+            font-size: 25px ;
+          }
+          & li {
+            font-size: 17px ;
+        }
+  
+        }
+        
+        .hisname {
+          & p {
+              font-size: 15px ;
+          }
+          .cirino {
+          font-size: 35px ;
+          }
+  
+        }
+      }
+  
+      
+  }
+  
+  
+    
+    
+    
+    .chef-restourants {
+      padding: 0;
+    }
+  
+    .forimage {
+      display: none;
+    }
+  
+    .forimage850 {
+      display: block;
+  
+      & img {
+  
+  
+        width: 100%;
+        height: 230px;
+        
+        // background-image: url(./images/outside.jpg);
+        object-fit: cover;
+      }
+    }
+
+    footer {
+      height: 85px;
+      
+    }
+  
+  
+  }  
+  
+@media  (max-width: 700px) {
+    p {
+      font-size: 14px;
+      line-height: 20px ;
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .main-title {
+      font-size: 26px;
+  }
+
+
+  #main-container {
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  header {
+    
+    z-index: 2;
+    height: 10vh;
+    .content {
+      justify-content: space-between;
+      text-align: center;
+      
+        }
+  
+        .logo {
+            & img {
+                width: 130px;
+                // margin-top: 5px;
+                display: inline-block;
+      
+            }
+        }
+    
+    
+        .content {
+    
+          padding: 0 15px;
+    
+          .a-content {////////////////////////////
+            // position: relative;
+            padding-top: 4px;
+          
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .header-move, .head-right{
+              display: none;
+              
+            }
+    
+            .btn700 {
+              display: inline-block;
+            }
+      
+          }
+        }
+    
+    }
+
+    .form-container {
+      
+      &-title {
+        text-align: center;
+        padding: 0;
+        
+
+      }
+
+      &-sub { 
+        padding: 0 10px;
+
+        & p {
+          padding: 0;
+        }
+
+        .form-tel {
+          padding: 10px 0 0 0;
+          
+        }
+
+      }
+
+      &-inner {
+        .img-flex-item {
+          width: 130px;
+
+          .img-box {
+            position: relative;
+
+            & img {
+              transform: rotate(90deg);
+              margin: 0;
+              position: absolute;
+              top: 36%;
+              left: 50%;
+              // transform: rotate(90deg)　translate(-50%);
+              transform: translate(-51%) rotate(90deg);
+
+            }
+            .img-title {
+              display: none;
+              
+            }
+          }
+        }
+      }
+
+    }
+    
+
+    .btn700 {
+      background-color: unset;
+      border: none;
+      outline: none ;
+      cursor: pointer;
+      position: absolute;
+      padding: 6px;
+      display: inline-block;
+      
+    
+      // top : 20%;
+      // left: 50%;
+      // transform: translateX(-50%);
+    
+      & > span {
+          background-color: Black;
+          width: 30px;
+          height: 2px;
+          display: block;
+          margin-bottom: 8px;
+          transition: transform 0.7s;
+    
+          &:last-child {
+              margin-bottom: 0;
+          }
+      }
+    } 
+
+
+    .main-image {
+      .full-img {
+        display: none;
+      }
+      .responsive-img {
+        display: block;
+      }
+    }
+
+    
+    
+  
+    .before-welcome {
+      padding-left: 4%;
+      padding-top: 10%;
+      padding: 10% 0 5% 4%;
+      
+      & h3 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+    } 
+  
+    .welcome-wrapper {
+      height: 100%;
+      padding:0 5% ;
+      // padding: none;
+  
+      
+  
+  
+      .welcome-content {
+        display: block;
+        object-fit: cover;
+        margin: 0 4vw;
+        padding: 100px 0;
+        
+        .welcome-images  {
+          object-fit: cover;
+          width: 100%;
+          
+          margin: 0 auto;
+          text-align: center;
+          & img {
+            object-fit: cover; 
+            width: 90%;
+          }
+          
+        }
+        
+        .welcome-text {
+          width: 100%;
+          padding-bottom: 10%;
+
+          .welcome-title {
+            padding-left: 4vw;
+            padding-bottom: 25px;
+          }
+          
+  
+          & h1,p{
+            width: 100%;
+  
+            max-width: 100%;
+          }
+  
+        }
+      }
+    }
+
+    .menu-wrapper {
+      .menu-content {
+        
+        .alacarte {
+          padding-top: 52px;
+          
+          font-size: 16px;
+          letter-spacing: 2px;
+          color: $bWhite;
+          font-family: 'Satisfy', cursive;
+          margin: 0;
+          
+        }
+        
+         .mealname {
+            font-size: 2vh;
+            font-family: 'Noto Serif JP', serif;
+            color: $bWhite;
+            border-bottom: 2px solid rgb(196, 144, 32);
+            display: inline-block;
+           
+               
+          }
+          
+          .price {
+            font-family: 'Noto Serif JP', serif;
+            color: $bWhite;
+            
+          }
+      }
+
+    }
+  
+
+    
+  
+    .chef-wrapper {
+
+      .forchef-title {
+         
+        height: 30px;
+     
+      }
+    }
+    .chef-main-wrap {
+      margin-bottom: 120px;
+      display: flex;
+      flex-direction: row;
+  
+      .chefs {
+        transform: translateY(-5%);
+        position: relative;
+        // display: flex;
+        .chef-img {
+          box-shadow: none;
+
+          width: 68%;
+          transform: translateX(-15%);
+        }
+        .chef-text {
+          position: absolute;
+          min-width: 300px;
+          padding-top: 20px;
+          transform: translateX(-8%);
+          top: 20%;
+          margin-left: 0;
+          padding: 0;
+          transform: none;
+          width: 100%;
+          min-width: 1px;
+          background-color: rgba(0,0,0,0);
+          
+          .hisname {
+            line-height: 24px;
+            .cirino {
+              font-size: 25px;
+              
+            }
+            & p {
+              font-size: 13px;
+              padding-top:  0;
+            }
+          }
+          
+          .chef-text-sub {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 7px;
+            // box-shadow: 51vw 4.5vw 0 0 #c94242e8;
+            
+            & h3 {
+              font-size: 19px;
+
+            }
+          }
+    
+          
+          .chef-restourants {
+            // min-width: 200px;
+            width: 210px;
+            margin-left: auto;
+            margin-bottom: 30px;
+            border-radius: 0 0 0 8%;
+            padding-right: 0px;
+            
+              & h3 {
+                padding-top: 0px;
+    
+              }
+            
+              & li {
+                  line-height:22px;
+                  font-size: 16px;
+                  padding-bottom: 5px;
+                    
+              }
+            
+          }
+          .chef-history {
+            // box-shadow: 70vw 4.5vw 0 0 #c94242e8;
+
+            margin-left:20px;
+          }
+  
+        }
+    
+      }
+  
+        
+      }
+      
+
+    .chef-content {
+      margin: 0;
+
+      & img {
+        border-radius: 0 3% 3% 0;
+      }
+
+      
+    }
+    .chef-content2 {
+      display: none;
+    }
+
+  
+  .access-wrapper {
+    .container {
+      width: 100vw;
+    }
+    .aboutaccess {
+      padding:100px 10px 40px 10px !important;
+      width:92% !important;
+
+  
+      & h4 {
+        font-size: 2vh !important;
+  
+      }
+  
+      & ul {
+        & li {
+          font-size: 1.7vh;
+        }
+  
+      }
+      .reserve-content {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+  
+    }
+
+  }
+  footer {
+    height: 80px;
+
+  }
+
+  #global-container {
+    width: 100vw;
+    z-index: -1;
+    #main-container {
+      z-index: 2;
+      position: relative;
+      background-color: white;
+      
+      
+    }
+    
+  }
+  .btn-wrap {
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    // background-color: #000;
+    margin-left: auto;
+    z-index: 3;
+
+    .btn-flex-wrap {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+
+    // & span {
+    //   background-color: white; //////@@@@@@
+    // }
+
+  }
+  .slide-menu {
+    position: fixed;
+    display: block;
+
+    
+    top: 0px;
+    right: 39%;///////@@@@@@@@@@
+    transform: translateX(222px);
+    width: 220px;
+    height: 100vh;
+
+
+    .menus {
+      text-decoration: none;
+      font-family:'Shippori Mincho', serif;
+      padding-top: 108px;
+
+      .reserve {
+        color: $cMain;
+      }
+
+      & li {
+        overflow: hidden;
+        padding-left: 25px;
+        margin-bottom: 30px;
+        
+      }
+      
+      & a {
+        color:black; 
+        display: block;
+        line-height: 1.5;
+        font-size: 17px;
+        animation-delay: 0.5s;
+        // transform: translateY(100%);
+        transition: all 0.6s;
+        // transition-delay: 1s;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @keyframes menu-animation {
+    0% {
+      // opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      // opacity: 1;
+      transform: translateY(0);
+    }
+    
+  }
+
+
+  
+  .open {
+    overflow: hidden;
+    
+    #main-container { 
+      transform: translateX(-39%);
+
+    }
+
+    .slide-menu {
+      & a {
+      //   @include basic-animation($name: menu-animation,)
+        
+      // }
+      @include basic-animation(
+        $name: menu-animation,
+        // $timing: cubic-bezier(0.39, 1.57, 0.58 ,1),
+        
+        
+        ) 
+      }
+    }
+
+    .black-cover {
+      visibility: visible;
+      opacity: 1;
+
+    }
+
+    & .btn700 {
+        & > span {
+  
+            &:nth-child(1) {
+                transition-delay: 70ms;
+                transform: translateY(10px) rotate(135deg);
+            }
+            &:nth-child(2) {
+                transition-delay: 0s;
+                transform:  translateX(-18px) scaleX(0);
+            }
+            &:nth-child(3) {
+                transition-delay: 140ms;
+                transform: translateY(-10px) rotate(-135deg);
+            }
+        }
+    }
+  }
+}
+  
+@media  (max-width: 400px) {
+  
+  header {
+    .logo {
+        & img {
+          width: 110px;
+          padding:  10px 0 0 0;
+  
+        }
+
+    }
+  }
+  
+    p {
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    .form-container {
+      
+      top: 0;
+      left: 0;
+      transform: none;
+      box-sizing: border-box;
+      height: 100vh;
+      margin: 0;
+      padding-top: 2vh;
+      // z-index: 4;
+      &-title {
+        display: none;
+      }
+      &-sub {
+        height: 70px;
+        padding: 0 4vw;
+      　
+        
+        & p {
+          font-size: 12px;
+
+        }
+      }
+      &-inner {
+
+        flex-direction: column-reverse;
+        margin: 0;
+        min-width: 0; 
+        height: auto;
+        
+
+        .img-flex-item {
+          width: auto;
+          height: 9vh;
+          margin-right: 20px;
+          overflow: hidden;
+
+
+          .img-box {
+            height: 100%;
+
+            .close-btn-wrap {
+              display: flex;
+              top: -7px;
+              right: -22px;
+              z-index: 1;
+            }
+
+            & h2 {
+              display: inline-block;
+              margin: 0 30px;
+              font-size: 20px;
+              
+            }
+
+            & img {
+              transform: translate(-51%) rotate(-24deg);
+              top: -20%;
+              left: 62%;
+              width: 240px;
+            }
+          }
+        }
+
+        .form-flex-item {
+          padding: 12px 0 20px 0;
+          height: auto;
+
+          .form-box {
+            height: 60vh;
+            margin: 0 4vw;
+            min-height: 360px;
+
+            
+            &-item {
+              font-size: 12px;
+              margin-bottom: 4px;
+
+              & input,select {
+                height: 26px;
+
+              }
+              
+              label {
+                padding-bottom: 2px;
+                line-height: 1;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+
+
+    .open {
+      overflow: hidden;
+      
+      #main-container { 
+        transform: translateX(-70%);
+  
+      }
+    }
+
+    .slide-menu {
+      right: 70%;
+      
+    }
+
+    .main-title {
+      &.view {
+        .ttlChar {
+          font-size: 23px;
+  
+        }
+
+      }
+    }
+
+    
+  
+    .main-image {
+      .front {
+        height: 200px;
+        width: none;
+        object-fit: cover;
+  
+      }
+  
+    }
+
+    .welcome-wrapper {
+      padding-top: 50px;
+      .welcome-content {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .menu-wrapper {
+      padding-bottom: 0;
+
+    }
+
+    .chef-main-wrap {
+      margin-bottom: 180px;
+      .chefs {
+        .chef-img {
+          width: 50%;
+
+        }
+        .chef-text {
+          margin-bottom: 30px;
+          .hisname {
+            .cirino {
+              font-size: 19px;
+    
+            }
+  
+            & p {
+              font-size: 13px;
+              padding-top:  0;
+              line-height: 10px;
+            }
+  
+          }
+          
+          .chef-restourants {
+            width: 180px;
+            margin-bottom: 10px; 
+            & h3 {
+              padding: 7px 0;
+
+
+            }
+            & li {
+              font-size: 13px;
+            }
+          }
+          .chef-history {
+            margin: 0 auto;
+            padding: 0 5%;
+            & li {
+              font-size: 13px;
+            }
+          }
+          .chef-text-sub {
+            & h3 {
+              font-size: 17px;
+            }
+
+          }
+        }
+      }
+
+    }
+
+    .access-wrapper {
+      .access-content {
+        .container {
+          display: relative;
+          
+        }
+      }
+    }
+  
+  
+    footer {
+      height: 70px;
+      padding: 0 20px 0 5px;
+  
+    }
+  }

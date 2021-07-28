@@ -1,0 +1,21 @@
+@mixin basic-animation (
+  $name,
+  $fill: both,
+  $count: 1,
+  $duration: 0.5s,
+  $timing: ease,
+  
+  ){
+    animation: {
+      name: $name;
+      fill-mode: $fill;
+      iteration-count: $count;
+      duration: $duration;
+      timing-function: $timing;
+    }
+    
+  }
+
+  $bWhite : white;
+  $cMain : rgb(253, 75, 75);
+
